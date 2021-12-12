@@ -21,7 +21,7 @@ class Conan(ConanFile):
         self.build_requires("cmake_utils/5.1.0#2c0d8f9dda3cac137976849bb3851fd6c4999de0")
 
     def requirements(self):
-        self.requires("ogg/1.3.5#190041ce71794a91fc3700029e9837837835fb4e")
+        self.requires("ogg/1.3.5#d615ae768dcf235654392fb87b4af397f0897a23")
 
     def source(self):
         tools.get(f"https://downloads.xiph.org/releases/{self.name}/{self.zip_name}")
