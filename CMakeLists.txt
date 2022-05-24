@@ -7,11 +7,8 @@ include(${CONAN_CMAKE_UTILS_ROOT}/global_settings_thirdparty.cmake)
 
 # Force find_package() to look in the Conan package directories first
 set(CMAKE_FIND_ROOT_PATH ${CONAN_CMAKE_MODULE_PATH} ${CMAKE_FIND_ROOT_PATH})
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
-list(APPEND CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR})
-set(CMAKE_FIND_ROOT_PATH ${CMAKE_BINARY_DIR})
 
-find_package(ogg REQUIRED)
+find_package(Ogg REQUIRED)
 
 add_subdirectory(source)
 
